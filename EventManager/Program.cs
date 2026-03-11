@@ -1,4 +1,7 @@
-using System;
+SoundSystem soundSystem = new SoundSystem();
+ScoreSystem scoreSystem = new ScoreSystem();
+AchievementSystem achievementSystem = new AchievementSystem();
 
-// README.md를 읽고 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+EventManager.TriggerEvent("ScoreChanged", 100);
+EventManager.TriggerEvent("Achievement", "첫 번째 적 처치");
+EventManager.TriggerEvent("GameOver");
